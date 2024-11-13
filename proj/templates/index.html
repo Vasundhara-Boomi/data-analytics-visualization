@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Course Recommendation</h1>
+    <form action="/recommend" method="post">
+        <label for="user_interests">Enter your interests:</label>
+        <input type="text" name="user_interests" id="user_interests" required>
+        <input type="submit" value="Recommend Courses">
+    </form>
+    {% if user_interests %}
+    <h2>Your Interests: {{ user_interests }}</h2>
+    <h3>Recommended Courses:</h3>
+    <ul>
+        {{ recommendations }}
+    </ul>
+    {% endif %}
+</body>
+</html>

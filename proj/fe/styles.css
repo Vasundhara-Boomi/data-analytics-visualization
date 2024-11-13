@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header/navigation */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Style the featured courses section */
+.featured-courses {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.featured-courses h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the about us section */
+.about-us {
+    background-color: #f1c40f;
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
